@@ -39,9 +39,9 @@ import pandas as pd
 
 # 5.A) Using "loc" attribute
 
-data_frame = {'cal': [458,550,230,100,230],"age":[13,28,47,33,90], "duration": [20,40,80,96,36]}
-data_frame = pd.DataFrame(data_frame)
-print(data_frame)
+# data_frame = {'cal': [458,550,230,100,230],"age":[13,28,47,33,90], "duration": [20,40,80,96,36]}
+# data_frame = pd.DataFrame(data_frame)
+# print(data_frame)
 
 # A slight difference b/w two below lines but results are same.. 
 # print(data_frame.loc[0:1]) 
@@ -59,10 +59,11 @@ print(data_frame)
 # SYNTAX FOR .iloc[rows-index, col-index] 
 
 # print(data_frame.iloc[0:3, :]) # Return row from 0-3, and all columns.
-print(data_frame.iloc[1:4, 1:3])
+# print(data_frame.iloc[1:4, 1:3])
 
 
-
-
+load_data = pd.read_csv('./data.csv')
+# print(load_data) # this line will show 5 line of starting and 5 lines of ending.
+print(load_data.to_string())  # This line will give all roes of dataset.
 
 
